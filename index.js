@@ -39,7 +39,7 @@ app.get('/Review', (req, res)=>{
     reviewCollection.find({})
        .toArray((err, documents)=>{
            res.send(documents);
-           
+           console.log(documents)
        })
    })
 
@@ -58,7 +58,7 @@ app.get('/Review', (req, res)=>{
     servicecollection.find({})
        .toArray((err, documents)=>{
            res.send(documents);
-           
+           console.log()
        })
    })
 
